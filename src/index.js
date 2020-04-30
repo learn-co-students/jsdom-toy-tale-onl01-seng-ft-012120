@@ -13,3 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+PATCH http://localhost:3000/toys/:id
+headers: 
+{
+  "Content-Type": "application/json",
+  Accept: "application/json"
+}
+ 
+body: JSON.stringify({
+  "likes": <new number>
+})
